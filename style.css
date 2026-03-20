@@ -1,0 +1,23 @@
+.carrossel {
+    max-width: 600px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+header {
+    background-color: darksalmon;
+}
+
+.joia {
+    width: 150px;
+    height: 150px;
+}
