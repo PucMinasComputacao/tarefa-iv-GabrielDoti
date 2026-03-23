@@ -1,23 +1,45 @@
-.carrossel {
-    max-width: 600px;
-    overflow: hidden;
-    position: relative;
-}
-
-.slides {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.slide {
-    min-width: 100%;
-}
-
 header {
-    background-color: darksalmon;
+    background-color: cornsilk;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
 }
 
 .joia {
-    width: 150px;
-    height: 150px;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.opcoes {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.opcoes:hover {
+     background-color: #0056b3;
+     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+      transform: translateY(-2px);
+}
+
+.carrossel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.carrossel img {
+    max-width: 250px;
+    height: 350px;
+    padding: 20px;
 }
